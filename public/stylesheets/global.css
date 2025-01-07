@@ -1,0 +1,8 @@
+/* Ubuntu Font */
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/fonts/Ubuntu-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

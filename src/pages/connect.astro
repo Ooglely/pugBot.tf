@@ -1,0 +1,41 @@
+---
+import Noscroll from "../layouts/Noscroll.astro";
+---
+
+<Noscroll title="pugBot.tf | Connect">
+    <div class="container">
+        <div class="main">
+            <h1>connect linking</h1>
+            <h3>link to any steam server by entering:</h3>
+            <h2 is:raw>https://pugbot.tf/connect/{ip}:{port}/{password}</h2>
+            <h3>for example: pugbot.tf/connect/chi3.serveme.tf:27115/12345</h3>
+        </div>
+    </div>
+</Noscroll>
+
+<style>
+    .container {
+        background-image: url("/reg_bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    .main {
+        min-width: 550px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: fit-content;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: Ubuntu, sans-serif;
+        color: black;
+        background: white;
+        border: 2px solid black;
+        border-radius: 12px;
+        padding: 25px;
+    }
+</style>

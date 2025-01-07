@@ -1,0 +1,54 @@
+---
+import { GIT_SHA } from "../../lib/consts.ts";
+---
+
+<div class="grid">
+    <p>
+        maintained with love by <a href="https://storywoven.net">oog</a> ~ <a href="https://github.com/Ooglely/pugBot">GitHub repo</a> ~ <a href="https://discord.gg/eEr6V5WTxf">support discord</a> ~ commit
+        <a href=`https://github.com/Ooglely/pugBot.tf/commit/${GIT_SHA}`>
+            <code>{GIT_SHA.substring(0, 7)}</code>
+        </a>
+    </p>
+</div>
+
+<style>
+    .grid {
+        background: #fff1d7;
+        color: #000000;
+        display: grid;
+        grid-template: none / auto;
+        min-height: 32px;
+        height: fit-content;
+        width: 100%;
+        position: relative;
+        margin: 0px;
+        text-align: center;
+        border-top: solid black;
+        z-index: 1;
+        flex: 0 0 auto;
+    }
+
+    p {
+        margin: 0px;
+        padding: 0px;
+        line-height: 32px;
+        font-family:
+            Inter,
+            -apple-system,
+            BlinkMacSystemFont,
+            Segoe UI,
+            Roboto,
+            Oxygen-Sans,
+            Ubuntu,
+            Cantarell,
+            Helvetica Neue,
+            sans-serif,
+            Apple Color Emoji,
+            Segoe UI Emoji,
+            Segoe UI Symbol;
+    }
+
+    a {
+        color: #000000;
+    }
+</style>
