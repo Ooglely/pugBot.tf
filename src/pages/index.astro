@@ -34,10 +34,10 @@ import Counts from "../components/Counts.svelte";
             </div>
             <div class="buttons" id="buttons">
                 <div class="buffer">
-                    <LinkButton title="Register" href="/register" body="Register to link your accounts!" />
-                    <LinkButton title="Profile" href="/profile" body="View your pug stats and rankings!" />
-                    <LinkButton title="Invite" href="/invite" body="Invite the bot to your own servers!" />
-                    <LinkButton title="Docs" href="/docs" body="Documentation on how to setup features of the bot!" />
+                    <LinkButton title="Register" href="/register" body="Register to link your accounts!" disabled={false} />
+                    <LinkButton title="Profile" href="/profile" body="View your pug stats and rankings! (Coming Soon)" disabled={true} />
+                    <LinkButton title="Invite" href="/invite" body="Invite the bot to your own servers!" disabled={false} />
+                    <LinkButton title="Docs" href="/docs" body="Documentation on how to setup features of the bot! (Coming Soon)" disabled={true} />
                 </div>
             </div>
         </div>

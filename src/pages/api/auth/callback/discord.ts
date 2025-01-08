@@ -61,7 +61,7 @@ async function getUserData(accessToken: string) {
 async function registerInBot(user_data: UserData) {
   return axios
     .post(
-      "https://agg-bot-test.up.railway.app/api/register",
+      "https://api.oog.pw/api/register",
       {
         steam: user_data.steam?.id,
         discord: user_data.discord?.id,
