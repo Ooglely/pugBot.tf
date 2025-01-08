@@ -10,8 +10,7 @@ export default defineConfig({
   adapter: node({
     mode: "standalone",
   }),
-  // site: PUGBOT_SITE_URL,
-  site: "http://192.168.1.30:4321",
+  site: PUGBOT_SITE_URL,
   vite: {
     resolve: {
       conditions: ["browser"],
@@ -19,5 +18,8 @@ export default defineConfig({
   },
   devToolbar: {
     enabled: false,
+  },
+  redirects: {
+    "/invite": "https://discord.com/api/oauth2/authorize?client_id=989250144895655966&permissions=1376554085456&scope=bot",
   },
 });
