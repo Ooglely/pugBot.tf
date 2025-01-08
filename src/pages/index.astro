@@ -4,6 +4,11 @@ import LinkButton from "../components/LinkButton.astro";
 import Counts from "../components/Counts.svelte";
 ---
 
+<Fragment slot="head">
+    <meta content="pugBot.tf" property="og:title" />
+    <meta content="TF2 discord pugs, done easy." property="og:description" />
+</Fragment>
+
 <Noscroll title="pugBot.tf">
     <div class="grid" id="grid">
         <div id="bg" class="decor"></div>

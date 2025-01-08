@@ -13,11 +13,12 @@ import Footer from "../components/Footer.astro";
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="Astro description" />
+        <meta content="https://pugbot.tf" property="og:url" />
+        <meta content="/logo.png" property="og:image" />
+        <meta property="og:type" content="website" />
+        <meta name="theme-color" content="#444444" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/logo.png" />
         <link rel="stylesheet" href="/stylesheets/global.css" />
-        <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
         <slot name="head" />
     </head>
