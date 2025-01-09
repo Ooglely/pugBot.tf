@@ -18,6 +18,7 @@ import Footer from "../components/Footer.astro";
         <meta property="og:type" content="website" />
         <meta name="theme-color" content="#444444" />
         <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/logo.png" />
         <link rel="stylesheet" href="/stylesheets/global.css" />
         <title>{title}</title>
         <slot name="head" />
@@ -53,7 +54,7 @@ import Footer from "../components/Footer.astro";
 
     .container {
         flex: 1 1;
-        min-height: calc(100vh - 218px);
+        min-height: calc(100% - 104px);
         background-color: rgb(255, 255, 255);
         width: 100%;
         overflow-y: auto;
