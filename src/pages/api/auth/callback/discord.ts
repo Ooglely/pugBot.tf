@@ -61,7 +61,7 @@ async function getUserData(accessToken: string) {
 async function registerInBot(user_data: UserData) {
   return axios
     .post(
-      `https://${PUGBOT_API_URL}/api/register`,
+      `${PUGBOT_API_URL}/api/register`,
       {
         steam: user_data.steam?.id,
         discord: user_data.discord?.id,

@@ -9,6 +9,6 @@ export const DISCORD_CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET || import
 
 export const DB_URL = process.env.MONGO_URL || import.meta.env.MONGO_URL;
 export const PUGBOT_API_KEY = process.env.BOT_API_PASSWORD || import.meta.env.BOT_API_PASSWORD;
-export const PUGBOT_API_URL = process.env.PUGBOT_API_URL || "api.oog.pw";
+export const PUGBOT_API_URL = process.env.PUGBOT_API_URL || "https://api.oog.pw";
 export const PUGBOT_SITE_URL = process.env.RAILWAY_PUBLIC_DOMAIN || "pugbot.tf";
 export const GIT_SHA = process.env.RAILWAY_GIT_COMMIT_SHA || "unknown";
