@@ -2,7 +2,7 @@ import type { APIRoute } from "astro";
 import { isCuid } from "@paralleldrive/cuid2";
 import { checkState, getUser, updateSession } from "../../../../../lib/database";
 import axios from "axios";
-import { DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET, PUGBOT_API_KEY } from "../../../../../lib/consts";
+import { DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET, PUGBOT_API_KEY, PUGBOT_API_URL } from "../../../../../lib/consts";
 import type { UserData } from "../../../../../lib/auth";
 
 async function getAccessToken(code: string) {
@@ -61,7 +61,7 @@ async function getUserData(accessToken: string) {
 async function registerInBot(user_data: UserData) {
   return axios
     .post(
-      "https://api.oog.pw/api/register",
+      `https://${PUGBOT_API_URL}/api/register`,
       {
         steam: user_data.steam?.id,
         discord: user_data.discord?.id,

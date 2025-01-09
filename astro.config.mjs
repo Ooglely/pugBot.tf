@@ -10,7 +10,7 @@ export default defineConfig({
   adapter: node({
     mode: "standalone",
   }),
-  site: PUGBOT_SITE_URL,
+  site: `https://${PUGBOT_SITE_URL}`,
   vite: {
     resolve: {
       conditions: ["browser"],
