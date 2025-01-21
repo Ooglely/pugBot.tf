@@ -22,7 +22,7 @@ const ip = await fetch(new URL(`/api/connect/${server}`, Astro.url)).then((res) 
             {error ? <p class="error">Error connecting to the server! Check that the IP in the URL is correct.</p> : <p>Connecting to {server}...</p>}
         </div>
     </div>
-    {!error && <meta http-equiv="refresh" content=`0;url=steam://connect/${ip}` />}
+    {!error && <meta http-equiv="refresh" content=`1;url=steam://connect/${ip}` />}
 </Noscroll>
 
 <style>
