@@ -8,7 +8,10 @@
     import SteamHeader from "./SteamHeader.svelte";
     import DiscordHeader from "./DiscordHeader.svelte";
     import Advertisement from "./Advertisement.svelte";
-    let { user_data, auth_error }: { user_data: UserData; auth_error: string | undefined } = $props();
+    let {
+        user_data,
+        auth_error,
+    }: { user_data: UserData; auth_error: string | undefined } = $props();
 
     let progression_state = $state(0);
 
@@ -18,7 +21,7 @@
             return;
         }
         if (user_data) {
-            if (user_data.hasOwnProperty("steam")) {
+            if (user_data.hasOwnProperty("steam") && user_data.steam.data) {
                 progression_state = 2;
             }
             if (user_data.hasOwnProperty("discord")) {
