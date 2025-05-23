@@ -12,8 +12,16 @@
         "TF2 Coaching Central": {
             icon: "tf2cc_logo.png",
             invite: "https://discord.gg/ybSYAd9",
-            description: "Learning environment for players new to competitive with educational classes, events and divisional 6s pugs for Newcomer up to Main+!",
+            description:
+                "Learning environment for players new to competitive with educational classes, events and divisional 6s pugs for Newcomer up to Main+!",
             gamemode: ["Sixes"],
+        },
+        "Cat Pugs": {
+            icon: "catpugs.png",
+            invite: "https://discord.gg/xCPWK3tFM2",
+            description:
+                "This server hosts Highlander PUGs designed to give you a taste of competitive Team Fortress 2 in a structured, fun environment. We cater to all skill levels with two distinct sections: Cat Pugs (AM+ Players) & Kitten Pugs (Intermediate & Below).\nThis is a private server, and the owners reserve the right to admit players at their discretion.",
+            gamemode: ["Highlander"],
         },
     };
     let {
@@ -28,7 +36,10 @@
 </div>
 {#if progression_state == 3}
     <h3>You have successfully registered your account!</h3>
-    <p>Looking for servers to play on? Check out the following servers using pugBot:</p>
+    <p>
+        Looking for servers to play on? Check out the following servers using
+        pugBot:
+    </p>
     <div class="serverlist">
         {#each Object.keys(server_list) as server}
             <ServerAd name={server} {...server_list[server]} />
